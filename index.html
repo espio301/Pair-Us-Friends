@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en" ng-app>
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<title class="">Friend Finder</title>
+</head>
+<body>
+	<div id="banner">Find-A-Friend</div> 
+	<div id="contentContainer">
+
+	    <div id="content">
+		<div id="mainText">Its nice to meet you, {{yourName}}!</div>
+		<form id="formData" action="/findFriend" method="get">
+			<input id="inputBox" name="name" placeholder="Your name Here" ng-model="yourName" autofocus>
+		</form>
+		</div>
+	</div>
+</body>
+</html
+
+

@@ -1,0 +1,26 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#banner{
+	display: relative;
+	line-height: 15vh;
+	width: 100%;
+	text-align: center;
+	font-size:8vh;
+}
+
+#mainText{
+	width:100%;
+	font-size: 5vh;
+	height: auto;
+}
+#contentContainer{
+	width: 100%; /*can be in percentage also.*/
+    height: 85vh;
+    text-align: center;
+}
+#content{
+}
