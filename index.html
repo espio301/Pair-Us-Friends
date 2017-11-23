@@ -10,15 +10,15 @@
 	<title class="">Friend Finder</title>
 </head>
 <body>
-	<div id="banner">Pair-Us-Friends</div> 
+	<div id="banner">Pair-Us-Friendss</div> 
 	<div id="contentContainer">
-
-	    <div id="content">
-		<div id="mainText">Its nice to meet you, {{yourName}}!</div>
-		<form id="formData" action="/findFriend" method="get">
-			<input id="inputBox" name="name" placeholder="Your name Here" ng-model="yourName" autofocus>
-		</form>
+	    <div id="inputContent">
+			<div id="mainText">Its nice to meet you, {{yourName}}!</div>
+			<form id="formData" action="/findFriend" method="get">
+				<input id="inputBox" name="name" placeholder="Your name Here" ng-model="yourName" autofocus>
+			</form>
 		</div>
+		<div id="outputContent"></div>
 	</div>
 </body>
 </html
