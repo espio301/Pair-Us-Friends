@@ -12,11 +12,12 @@ body{
 	font-size:8vh;
 }
 
-#mainText{
+.mainText{
 	width:100%;
-	font-size: 5vh;
+	font-size: 5vh !important;
 	height: auto;
 }
+
 #contentContainer{
 	width: 100%; /*can be in percentage also.*/
     height: 85vh;

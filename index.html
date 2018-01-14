@@ -4,18 +4,23 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="frontEnd.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 	<title class="">Friend Finder</title>
 </head>
 <body>
-	<div id="banner">Pair-Us-Friendss</div> 
+	<div id="banner">Pair-Us-Friends</div> 
 	<div id="contentContainer">
 	    <div id="inputContent">
-			<div id="mainText">Its nice to meet you, {{yourName}}!</div>
-			<form id="formData" action="/findFriend" method="get">
-				<input id="inputBox" name="name" placeholder="Your name Here" ng-model="yourName" autofocus>
+			<div id="nameGreeting" class="mainText">Its nice to meet you, {{yourName}}!</div>
+			<form id="formData" action="http://localhost:8080/" method="post">
+				<input id="inputName" class="inputBox" name="name" placeholder="Your name Here" ng-model="yourName">
+<!-- after js functions are finished
+			<div id="locationGreeting" class="mainText">Where exactly are you?</div>
+				<input id="inputLocation" class="inputBox" onkeydown="checkSubmit()" name="place" placeholder="Location/Community name">
+-->
 			</form>
 		</div>
 		<div id="outputContent"></div>
